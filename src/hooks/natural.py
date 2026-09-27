@@ -1,5 +1,3 @@
-cd /workspaces/Attendance-System
-cat > natural.py << 'EOF'
 #!/usr/bin/env python3
 """
 natural.py - Backdated commits that look like real human activity:
@@ -81,5 +79,3 @@ print(f"Done: {total} commits across {days} days ({a.start} -> {a.end})")
 if a.push and not a.dry_run and total:
     git("push")
     print("Pushed.")
-EOF
-echo "natural.py created"
